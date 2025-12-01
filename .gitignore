@@ -1,0 +1,19 @@
+/.bundle/
+/.yardoc
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+
+# Gem builds
+*.gem
+
+# IDE
+/.idea/
+.DS_Store
+
+# Local development
+IMPLEMENTATION_SUMMARY.md
+SCOPED_ASSOCIATIONS_PATCH.md
