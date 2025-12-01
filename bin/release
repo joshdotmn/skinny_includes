@@ -12,7 +12,7 @@ echo ""
 
 # Run tests first
 echo -e "${YELLOW}🧪 Running tests...${NC}"
-if bundle exec rspec > /dev/null 2>&1; then
+if ruby spec/skinny_includes_spec.rb > /dev/null 2>&1; then
   echo -e "${GREEN}✓ All tests passed${NC}"
 else
   echo -e "${RED}❌ Tests failed${NC}"
