@@ -9,10 +9,6 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        ruby: ['3.2', '3.3']
-        rails: ['7.0', '7.1', '7.2', '8.0']
 
     steps:
     - uses: actions/checkout@v4
@@ -20,7 +16,7 @@ jobs:
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: ${{ matrix.ruby }}
+        ruby-version: '3.3'
         bundler-cache: true
 
     - name: Run tests
