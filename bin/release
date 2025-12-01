@@ -96,9 +96,9 @@ echo "  2. Push gem to rubygems.org"
 echo "  3. Create git tag v${NEW_VERSION}"
 echo "  4. Push to GitHub"
 echo ""
-read -p "Continue? (y/N) " -n 1 -r
+read -p "Continue? (y/N) " -r REPLY
 echo
-if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+if [[ ! "$REPLY" =~ ^[Yy]$ ]]; then
   echo -e "${RED}Aborted${NC}"
   rm -f "$GEM_FILE"
   # Revert version change
